@@ -1,0 +1,95 @@
+version: "3.1"
+nlu: 
+- intent: question
+  examples: | 
+    - Câu 1: Hóa đơn điện tử là gì?
+    - Câu 2: Có bao nhiêu hình thức đơn điện tử?
+    - Câu 3: Hóa đơn điện tử có mã của cơ quan thuế là hóa đơn như thế nào? 
+    - Câu 4: Mã của cơ quan thuế trên hóa đơn là gì?
+    - Câu 5: Hóa đơn điện tử không có mã của cơ quan thuế là hóa đơn gì?
+    - Câu 6: Hóa đơn được khởi tạo từ máy tính tiền có kết nối chuyển dữ liệu với cơ quan thuế là hóa đơn như thế nào?
+    - Câu 7: Hóa đơn được khởi tạo từ máy tính tiền có kết nối chuyển dữ liệu với cơ quan thuế phải đảm bảo nguyên tắc gì?
+    - Câu 8: Những doanh nghiệp nào được đăng ký áp dụng hóa đơn điện tử có mã của cơ quan thuế? 
+    - Câu 9: Hộ kinh doanh, cá nhân kinh doanh có được đăng ký áp dụng hóa đơn điện tử có mã của cơ quan thuế không?
+    - Câu 10: Những doanh nghiệp nào được đăng ký áp dụng hóa đơn điện tử không có mã của cơ quan thuế?
+    - Câu 11: Cơ sở hạ tầng CNTT như thế nào để được đăng ký áp dụng hóa đơn điện tử không có mã của CQT?
+    - Câu 12: Đối tượng nào được đăng ký áp dụng hóa đơn được khởi tạo từ máy tính tiền kết nối chuyển dữ liệu điện tử với cơ quan thuế? 
+    - Câu 13: Đối tượng nào nào được sử dụng miễn phí hóa đơn điện tử có mã của cơ quan thuế ?
+    - Câu 14: Doanh nghiệp được sử dụng miễn phí hóa đơn điện tử có mã của CQT trong bao lâu?
+    - Câu 15: Trước khi sử dụng hóa đơn điện tử thì doanh nghiệp, tổ chức, hộ cá nhân phải làm gì?
+    - Câu 16: Trường hợp đã đăng ký sử dụng đăng ký sử dụng hóa đơn điện tử có mã của cơ quan thuế qua Cổng thông tin điện tử của Tổng cục Thuế nhưng muốn thay đổi thông tin thì có được không?
+    - Câu 17: Sau khi đăng ký sử dụng hóa đơn điện tử thì doanh nghiệp phải chờ bao lâu để được sử dụng hóa đơn điện tử?
+    - Câu 18: Doanh nghiệp chúng tôi đăng ký sử dụng hóa đơn điện tử không mã của cơ quan thuế và đăng ký chuyển dữ liệu trực tiếp đến cơ quan thuế thì phải làm gì?
+    - Câu 19: Trong thời gian bao lâu thì doanh nghiệp đăng ký sử dụng hóa đơn điện tử không mã của cơ quan thuế và đăng ký chuyển dữ liệu trực tiếp đến cơ quan thuế được cơ quan thuế thực hiện kết nối?
+    - Câu 20: Trường hợp doanh nghiệp nhận được thông báo của cơ quan thuế về việc thực hiện kết nối nhưng doanh nghiệp chưa đáp ứng hạ tầng kỹ thuật hoặc việc kiểm thử kết nối, truyền nhận dữ liệu không thành công thì doanh nghiệp cần làm gì?
+    - Câu 21: Hóa đơn điện tử phải theo định dạng nào?
+    - Câu 22: Định dạng hóa đơn điện tử theo tiêu chuẩn của cơ quan thuế được quy định tại văn bản nào?
+    - Câu 23: Hóa đơn điện tử cần có các nội dung gì trên hóa đơn
+    - Câu 24: Ký hiệu mẫu số hóa đơn là gì?
+    - Câu 25:Thế nào là ký hiệu hóa đơn đối với hóa đơn điện tử?
+    - Câu 26: Hoá đơn điện tử có mấy liên?
+    - Câu 27: Thế nào là số hóa đơn? 
+    - Câu 28: Trong trường hợp tổ chức kinh doanh có nhiều cơ sở bán hàng đồng thời cùng sử dụng một loại hóa đơn điện tử có cùng ký hiệu theo phương thức truy xuất ngẫu nhiên từ một hệ thống lập hóa đơn điện tử thì số hóa đơn được thiết lập như thế nào?
+    - Câu 29: Tên, địa chỉ, mã số thuế của người bán trên hóa đơn đảm bảo yêu cầu gì?
+    - Câu 30: Tên, địa chỉ, mã số thuế của người mua đảm bảo yêu cầu gì ?
+    - Câu 31: Nếu địa chỉ người mua quá dài trên hóa đơn, thì người bán có được viết tắt một số doanh từ thông dụng không?
+    - Câu 32: Trong trường hợp người tiêu dùng là cá nhân, họ muốn bảo mật thông tin; thì hóa đơn bắt buộc phải thể hiện tên, địa chỉ người mua không?
+    - Câu 33: Tên hàng hóa, dịch vụ thể hiện trên hóa đơn đảm bảo yêu cầu gì?
+    - Câu 34: đơn vị tính thể hiện trên hóa đơn như thể nào?
+    - Câu 35: Doanh nghiệp có thể sử dụng tiếng nước ngoài trên hóa đơn không?
+    -  Câu 36: Chữ ký số của người bán là gì?
+    - Câu 37: Thời điểm ký số trên hóa đơn điện tử được hiển thị như thế nào?
+    - Câu 38: Trường hợp hóa đơn điện tử đã lập có thời điểm ký số trên hóa đơn khác thời điểm lập hóa đơn thì thời điểm khai thuế xác định như thế nào?
+    - Câu 39: Chữ viết, chữ số và đồng tiền phải thể hiện trên hóa đơn như thế nào?
+    - Câu 40: Doanh nghiệp tôi có được sử dụng tiếng nước ngoài trên hóa đơn không?
+    - Câu 41: Doanh nghiệp có được sử dụng ngoại tệ trên hóa đơn không?
+    - Câu 42: Người mua có nhất thiết phải ký trên hóa đơn điện tử không?
+    - Câu 43: Hóa đơn điện tử được cơ quan thuế cấp theo từng lần phát sinh có cần thiết phải có chữ ký số của người mua, người bán không?
+    - Câu 44: Các siêu thị, trung tâm thương mại bán cho cá nhân không kinh doanh có phải điền thông tin người mua trên hóa đơn không?
+    - Câu 45: Doanh nghiệp kinh doanh xăng dầu bán hàng cho cá nhân không kinh doanh có phải điền đầy đủ các nội dung bắt buộc trên hóa đơn không?
+    - Câu 46: Trường hợp hóa đơn điện tử là tem, vé thẻ thì có phải điền đầy đủ các nội dung bắt buộc trên hóa đơn không?
+    - Câu 47: Doanh nghiệp vận tải hàng không xuất vé qua website và hệ thống thương mại điện tử theo thông lệ quốc tế có phải điền đầy đủ các nội dung bắt buộc trên hóa đơn không?
+    -  Câu 48: Trường hợp tổ chức kinh doanh hoặc tổ chức không kinh doanh mua dịch vụ vận tải hàng không thì chứng từ điện tử dịch vụ vận tải hàng không xuất qua website và hệ thống thương mại điện tử được lập theo thông lệ quốc tế cho các cá nhân của tổ chức kinh doanh, cá nhân của tổ chức không kinh doanh có được xác định là hóa đơn điện tử không?
+    - Câu 49: Hóa đơn sử dụng cho thanh toán Interline giữa các hãng hàng không được lập theo quy định của Hiệp hội vận tải hàng không quốc tế có phải điền đầy đủ các nội dung bắt buộc trên hóa đơn điện tử?
+    - Câu 50: Doanh nghiệp hoạt động xây dựng, lắp đặt thì hóa đơn điện tử có phải điền đầy đủ các nội dung bắt buộc trên hóa đơn điện tử?
+    - Câu 51: Các Phiêu xuất kho điện tử được coi như hóa đơn điện tử không?
+    - Câu 52: Các Phiêu xuất kho điện tử được coi như hóa đơn điện tử thì cần có các thông tin bắt buộc gì?
+    -  Câu 53: Doanh nghiệp hoạt động trong lĩnh vực an ninh quốc phòng thì có cần đầy đủ các nội dung bắt buộc trên hóa đơn không?
+    - Câu 54: Cơ sở kinh doanh được phép in trên hóa đơn logo nhãn hiêu của mình không?
+    - Câu 55: Hóa đơn điện tử có mã của cơ quan thuế được khởi tạo từ máy tính tiền có kết nối chuyển dữ liệu điện tử với cơ quan thuế cần có nội dung gì?
+    - Câu 56: Doanh nghiệp sử dụng hóa đơn điện tử có mã của cơ quan thuế không phải trả tiền dịch vụ lập hóa đơn điện tử như thế nào?
+    - Câu 57: Doanh nghiệp sử dụng hóa đơn điện tử có mã của cơ quan thuế qua tổ chức cung cấp dịch vụ hóa đơn điện tử lập hóa đơn điện tử như thế nào?
+    - Câu 58: Doanh nghiệp sử dụng hóa đơn điện tử không có mã của cơ quan thuế lập hóa đơn điện tử như thế nào ?
+    - Câu 59: Doanh nghiệp có được ủy nhiệm lập hóa đơn điện tử không?
+    - Câu 60: Trình tự, thủ tục ủy nhiệm/chấm dứt ủy nhiệm lập hóa đơn điện tử như thế nào?
+    - Câu 61: Văn bản ủy nhiệm phải có các thông tin gì?
+    - Câu 62: Thủ tục thông báo với cơ quan Thuế về ủy nhiệm lập hóa đơn thực hiện như thế nào?
+    - Câu 63: Bên ủy nhiệm, bên nhận ủy nhiệm điền thông tin ủy nhiệm ở phần nào của Mẫu số 01ĐKTĐ/HĐĐT?
+    - Câu 64: Hóa đơn điện tử ủy nhiệm phải có thông tin gì?
+    - Câu 65: Hóa đơn điện tử ủy nhiệm không có mã của CQT thì ai là người chuyển dữ liệu hóa đơn đến cơ quan thuế?
+    - Câu 66: Doanh nghiệp sử dụng hóa đơn điện tử có mã của cơ quan thuế có phải chuyển dữ liệu hóa đơn điện tử đến cơ quan thuế không?
+    - Câu 67: Doanh nghiệp sử dụng hóa đơn điện tử không có mã của cơ quan thuế có phải chuyển dữ liệu hóa đơn điện tử đến cơ quan thuế không?
+    - Câu 68: Doanh nghiệp sử dụng hóa đơn điện tử không có mã của cơ quan thuế phải chuyển dữ liệu hóa đơn điện tử đến cơ quan thuế theo phương thức nào?
+    - Câu 69: Doanh nghiệp sử dụng hóa đơn điện tử không có mã của cơ quan thuế kinh doanh trong những ngành nghề nào được chuyển dữ liệu hóa đơn điện tử theo Bảng tổng hợp dữ liệu hóa đơn điện tử
+    - Câu 70: Người bán phát hiện hóa đơn điện tử đã được cấp mã của cơ quan thuế chưa gửi cho người mua có sai sót thì phải xử lý như thế nào?
+    - Câu 71:Hóa đơn điện tử đã gửi cho người mua mà người mua hoặc người bán phát hiện có sai sót về tên, địa chỉ của người mua nhưng không sai mã số thuế, các nội dung khác không sai sót phải xử lý như thế nào?
+    - Câu 72: Hóa đơn điện tử đã gửi cho người mua mà người mua hoặc người bán phát hiện có sai sót về số tiền ghi trên hóa đơn, sai về thuế suất, tiền thuế hoặc hàng hóa ghi trên hóa đơn không đúng quy cách, chất lượng phải xử lý như thế nào?
+    - Câu 73: Doanh nghiệp nhận được thông báo của cơ quan thuế về việc phát hiện hóa đơn điện tử có mã của cơ quan thuế hoặc hóa đơn điện tử không có mã của cơ quan thuế đã lập có sai sót?
+    - Câu 74: Doanh nghiệp có được ghi dấu âm, dấu dương trên hóa đơn điều chỉnh hóa đơn có sai sót không?
+    - Câu 75: Người bán xử lý bảng tổng hợp dữ liệu hóa đơn điện tử đã gửi cơ quan thuế có sai sót như thế nào?
+    - Câu 76: Thời điểm lập hóa đơn đối với bán hàng hóa, cung cấp dịch vụ là khi nào?
+    - Câu 77: Đối với trường hợp giao hàng nhiều lần hoặc bàn giao từng hạng mục, công đoạn dịch vụ thì thời điểm lập hóa đơn được quy định như thế nào?
+    - Câu 78: Doanh nghiệp nào được lập hóa đơn theo kỳ?
+    - Câu 79: doanh nghiệp cung cấp dịch vụ viễn thông, dịch vụ công nghệ thông tin thời điểm lập hóa đơn là khi nào?
+    - Câu 80: Đối với hoạt động xây dựng, lắp đặt và đối với tổ chức kinh doanh bất động sản, xây dựng cơ sở hạ tầng, xây dựng nhà để bán, chuyển nhượng lập hóa đơn khi nào ?
+    - Câu 81: Đối với các trường hợp tổ chức kinh doanh mua dịch vụ vận tải hàng không xuất qua website và hệ thống thương mại điện tử được quy định về thời điểm lập hóa đơn như thế nào ?
+    - Câu 82: Đối với hoạt động tìm kiếm thăm dò, khai thác và chế biến dầu thô và Đối với hoạt động bán khí thiên nhiên, khí đồng hành, khí than được chuyển bằng đường ống dẫn khí đến người mua lập hóa đơn khi nào?
+    - Câu 83: Đối với cơ sở kinh doanh thương mại bán lẻ, kinh doanh dịch vụ ăn uống theo mô hình hệ thống cửa hàng bán trực tiếp đến người tiêu dùng nhưng việc hạch toán toàn bộ hoạt động kinh doanh được thực hiện tại trụ sở chính được quy định về thời điểm lập hóa đơn được xác định như thế nào?
+    - Câu 84: Đối với hoạt động bán điện của các công ty phát điện trên thị trường điện thì việc xác định thời điểm lập hóa đơn như thế nào ?
+    - Câu 85: Đối với trường hợp bán xăng dầu tại các cửa hàng bán lẻ cho khách hàng thời điểm lập hóa đơn như thế nào?
+    - Câu 86: Đối với trường hợp cung cấp dịch vụ vận tải hàng không, dịch vụ bảo hiểm qua đại lý được quy định về thời điểm lập hóa đơn như thế nào? 
+    - Câu 87 :Đối với trường hợp cung cấp dịch vụ ngân hàng, chứng khoán, bảo hiểm, dịch vụ chuyển tiền qua ví điện tử, dịch vụ ngừng và cấp điện trở lại của đơn vị phân phối điện cho người mua là cá nhân không kinh doanh (hoặc cá nhân kinh doanh) nhưng không có nhu cầu lấy hóa đơn được quy định về thời điểm lập hóa đơn như thế nào?
+    - Câu 88: Đối với kinh doanh vận tải hành khách bằng xe taxi có sử dụng phần mềm tính tiền theo quy định của pháp luật được quy định về thời điểm lập hóa đơn như thế nào? 
+    - Câu 89: Đối với cơ sở y tế kinh doanh dịch vụ khám chữa bệnh có sử dụng phần mềm quản lý khám chữa bệnh và quản lý viện phí, từng giao dịch khám, chữa bệnh và thực hiện các dịch vụ chụp, chiếu, xét nghiệm có in phiếu thu tiền (thu viện phí hoặc tiền khám, xét nghiệm) và có lưu trên hệ thống công nghệ thông tin được quy định về thời điểm lập hóa đơn như thế nào?
+    - Câu 90: Đối với hoạt động thu phí dịch vụ sử dụng đường bộ theo hình thức điện tử không dừng ngày lập hóa đơn điện tử là ngày xe lưu thông qua trạm thu phí được quy định về thời điểm lập hóa đơn như thế nào?
+    - Câu 91: Trường hợp nhận nhập khẩu hàng hóa ủy thác, nếu cơ sở kinh doanh nhận nhập khẩu ủy thác đã nộp thuế giá trị gia tăng ở khâu nhập khẩu thì sử dụng hóa đơn điện tử như thế nào?

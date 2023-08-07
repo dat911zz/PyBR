@@ -1,0 +1,153 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - xin chào
+    - hi there
+    - chào bạn
+    - chào nhé
+    - con bà mày
+    - chào em
+    - xin chào em
+    - ê mày
+- intent: goodbye
+  examples: |
+    - bye
+    - tạm biệt em
+    - tạm biệt
+    - bye em
+    - em đi mạnh giỏi
+    - cút
+    - biến
+    - exit()
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - đúng rồi đó
+    - đúng
+    - chính xác
+    - chuẩn
+    - hợp lý đấy
+    - chuẩn xác
+    - ok
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - không bé ơi
+    - có cái nịt nha
+    - từ chối
+    - nope
+    - không
+    - cút
+    - xéo
+    - không nha
+- intent: mood_great
+  examples: |
+    - tuyệt
+    - tuyệt vời
+    - hay vãi
+    - hay
+    - quá được luôn bạn
+    - yeah
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - nghệ đấy
+    - đỉnh cao
+    - quá đẳng cấp
+- intent: mood_unhappy
+  examples: |
+    - chán
+    - buồn quá
+    - khóc
+    - muốn khóc quá
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: mood_angry
+  examples: |
+    - mé
+    - tức
+    - cút
+    - biến
+    - phắn ngay
+    - phắn lẹ
+    - biến đi
+    - tao cay rồi nha
+    - giận luôn
+    - giận
+    - tức giận
+    - dỗi
+    - giận dỗi
+    - con bà mày
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - mày là ai?
+    - bạn là ai?
+    - bạn có phải là bot?
+    - bạn là AI đúng không?
+    - who are you?
+- intent: ask_bot
+  examples: |
+    - Cho anh mua [đôi giầy](product_name)
+    - Anh muốn mua [đôi tất](product_name)
+    - Anh muốn mua [đôi vớ]{"entity": "product_name", "value": "\u0111\u00f4i t\u1ea5t"}
+    - anh muốn mua [đôi tất](product_name)
+- intent: feedback
+  examples: |
+    - Anh nhận được hàng rồi, sản phẩm chất lượng tốt
+    - Đã nhận được hàng
+    - Sản phẩm chất lượng kém
+    - Đã nhận
+    - Sản phẩm được đấy
+- intent: question
+  examples: |
+    - cho tôi hỏi là doanh nghiệp sử dụng hóa đơn điện tử không có mã của cơ quan thuế lập hóa đơn điện tử như thế nào ?
+    - cho tôi hỏi lại Doanh nghiệp sử dụng hóa đơn điện tử không có mã của cơ quan thuế lập hóa đơn điện tử như thế nào ?
+    - Vậy hóa đơn điện tử là gì?
+    - Mã của cơ quan thuế?
+    - Mã của cơ quan thuế là?
+    - Thuế?
+    - Cơ quan thuế?
+    - thuế là?
+    - thuế?
+    - thuế
+- synonym: đôi tất
+  examples: |
+    - đôi vớ

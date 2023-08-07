@@ -1,0 +1,112 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: mood_great
+  - intent: goodbye
+  - action: utter_goodbye
+  - intent: goodbye
+  - action: utter_goodbye
+  - intent: ask_bot
+    entities:
+    - product_name: đôi tất
+  - action: ask_bot
+
+- story: answer_question_hddt
+  steps:
+    - intent: question
+    - action: utter_response
+    - action: action_get_answer
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: question
+  - action: utter_response
+  - action: action_get_answer
+  - intent: question
+  - action: utter_response
+  - action: action_get_answer
+  - intent: question
+  - action: utter_response
+  - action: action_get_answer
+  - intent: question
+  - action: utter_response
+  - action: action_get_answer
+  - intent: question
+  - action: utter_response
+  - action: action_get_answer
+  - intent: question
+  - action: utter_response
+  - action: action_get_answer
+  - intent: question
+  - action: utter_response
+  - action: action_get_answer
+  - intent: mood_great
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: question
+  - action: utter_response
+  - action: action_get_answer
+  - intent: question
+  - action: utter_response
+  - action: action_get_answer
+  - intent: question
+  - action: utter_response
+  - action: action_get_answer
+  - intent: question
+  - action: utter_response
+  - action: action_get_answer
+
+- story: interactive_story_1
+  steps:
+  - intent: nlu_fallback
+  - intent: mood_angry
+  - action: utter_confirm_no
+  - intent: deny
+  - action: utter_goodbye
+  - intent: greet
+  - intent: mood_angry
+  - action: utter_confirm_no
+  - intent: deny
+  - intent: affirm
+  - action: utter_happy

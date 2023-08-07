@@ -1,0 +1,79 @@
+version: '3.1'
+intents:
+- affirm
+- ask_bot
+- bot_challenge
+- deny
+- feedback
+- goodbye
+- greet
+- mood_angry
+- mood_great
+- mood_unhappy
+- question
+responses:
+  utter_greet:
+  - text: |-
+      Xin chào, tôi là SDS Chatbot!
+      Tôi có thể giúp gì cho bạn?
+  - text: |-
+      Chào bạn!
+      Tôi có thể giúp gì cho bạn?
+  - text: |-
+      Xin chào bạn!
+      Tôi có thể giúp gì cho bạn?
+  utter_cheer_up:
+  - text: Tui có cái này có thể giúp bạn vui lên :3
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Điều đó có giúp ích được cho bạn không?
+  - text: Bạn thấy ổn chứ?
+  - text: Bạn thấy ok không nè? :3
+  utter_happy:
+  - text: Tuyệt vời, tiếp tục đi bạn ơi!
+  - text: Hay nha :3
+  utter_goodbye:
+  - text: Cảm ơn bạn đã nhắn tin với tôi!
+  - text: Bye!
+  - text: Tạm biệt bạn nhé! :3
+  utter_iamabot:
+  - text: |-
+      Tôi là SDS Chatbot - một Chatbot được xây dựng bởi datvn trên nền tảng công nghệ trí tuệ nhân tạo.
+      Tôi đang trong quá trình phát triển.
+      Nếu có sai sót gì trong quá trình giao tiếp mong bạn thông cảm!
+  utter_ask_bot:
+  - text: 'Ok, bạn vui lòng bấm vào đường link: ... .'
+  - text: 'Bạn có thể bấm vào link này: ... .'
+  utter_response:
+  - text: 'Sau đây là câu trả lời cho câu hỏi của bạn:'
+  - text: Xin được trả lời câu hỏi của bạn
+  utter_feedback:
+  - text: Rất cảm ơn bạn đã tin tưởng và sử dụng sản phẩm của chúng tôi!
+  utter_confirm:
+  - text: Bạn thấy có ổn không?
+  - text: Bạn thấy ok không?
+  - text: Bạn có hài lòng với câu trả lời của tôi không?
+  utter_confirm_yes:
+  - text: Cảm ơn bạn đã góp ý!
+  - text: Cảm ơn bạn <3
+  - text: Tuyệt vời đó :3
+  utter_confirm_no:
+  - text: |
+      Xin lỗi vì khiến bạn không thoải mái.
+      Tôi vẫn đang trong quá trình phát triển, có sai sót gì trong quá trình giao tiếp mong bạn thông cảm.
+      Chân thành cảm ơn vì bạn đã lắng nghe!
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+entities:
+- product_name
+actions:
+- utter_confirm_no
+- utter_happy
+- utter_goodbye
+- utter_response
+- action_get_answer
+- utter_greet
+- ask_bot
+- utter_iamabot
+- action_add_endpoint
