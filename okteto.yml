@@ -1,4 +1,6 @@
 name: rasa-server
+autocreate: true
+image: dat911zz/rasa-bot:latest
 command: bash
 volumes:
 - /root/.cache/pip
